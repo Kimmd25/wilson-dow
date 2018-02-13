@@ -1,0 +1,1568 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  font-weight: lighter;
+  src: url("../fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  font-weight: bold;
+  src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Condensed';
+  letter-spacing: -1px;
+  src: url("../fonts/GothamCondensed-Book.otf") format("opentype");
+}
+
+html {
+  height: 100vh;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*text size*/
+.size h1 {
+
+  font-size: 65px;
+  font-weight: 200;
+  line-height: 75px;
+  letter-spacing: 4px;
+  font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+.size h2 {
+  font-size: 45px;
+  font-weight: 100;
+  text-align: left;
+  font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+.size h3 {
+  font-size: 37px;
+  line-height: 1.1;
+  font-family: "Gotham medium",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.size h4 {
+  font-family: "Gotham",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.bold {
+  font-weight:900 !important;
+}
+
+/*Color*/
+.main {
+color:white;
+background-color:white;
+}
+
+.secondary {
+color:#717271;
+background-color:#717271;
+}
+
+.tertiary {
+color:#a97eb1;
+background-color:#a97eb1;
+}
+
+.maintable {
+color:white;
+}
+
+.secondarytable {
+  color:#717271;
+}
+
+.tertiarytable {
+  color:#a97eb1;
+}
+
+.black{
+  color: black;
+  background-color: black;
+}
+
+.graph-light {
+  background-color: #d8d5cd;
+}
+
+.graph-dark {
+  background-color: #ebe9e6;
+}
+
+
+.cover {
+    position:absolute;
+    top: 960px;
+    left: 655px;
+    width: 1500px;
+    height: 400px;
+    background-color: white;
+}
+
+
+
+/*background sections and bugs*/
+
+.rightfullsize {
+  position: absolute;
+  left:1420px;
+  top:0px;
+  width: inherit;
+  height: inherit;
+}
+
+.leftfullsize {           /*<div class="leftfullsize tertiary" data-fragment-index="1"></div>*/
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 640px;
+  height:1000px;
+}
+
+.topleftbug{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:260px;
+}
+
+.whitebug{
+  position: absolute;
+  left:57px;
+  width:200px;
+  top:40px;
+}
+
+.graphsizemain {
+  top: 0px;
+  width: 185px;
+  height: 918px;
+}
+
+.graphsizesecondary{
+  top: 0px;
+  width: 195px;
+  height: 918px;
+}
+
+/*Common Stuff*/
+.regmark {
+  font-size:40% !important;
+  vertical-align: 100% !important;
+  line-height: 100% !important;
+}
+
+.fragadd {
+
+}
+
+.column {
+    float: left;
+    position: relative;
+    text-align:left;
+    top: 350px;
+    left: 57px;
+    width: 14%;
+    height: 300px;
+}
+
+.columnspan {
+    float: left;
+    position: relative;
+    text-align:left;
+    top: 350px;
+    left:50px;
+    width:30%;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Results*/
+.resultsh1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+  width: 600px;
+}
+
+.before h2 {
+  position: absolute;
+  left:1000px;
+  top:160px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.after h2 {
+  position: absolute;
+  left:1480px;
+  top:160px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.resultsh4 h4 {
+  position: absolute;
+  left:57px;
+  top:800px;
+  width: 600px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.before-i {
+  position: absolute;
+  left: 810px;
+  top: 200px;
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+.after-i {
+  position: absolute;
+  left: 1285px;
+  top: 200px;
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+
+
+/*Navigation*/
+
+.prev {
+  background:url(https://s3.amazonaws.com/skinmedica/img/00-prev-button.png);/*(/img/00-prev-button.png);*/
+  background-repeat: no-repeat;
+  top: 977px;
+  left: 750px;
+  width: 190px;
+  height: 65px;
+  border: none;
+  position: relative;
+}
+.next {
+  background:url(https://s3.amazonaws.com/skinmedica/img/00-next-button.png);/*(/img/00-next-button.png);*/
+  background-repeat: no-repeat;
+  top: 977px;
+  left: 780px;
+  width: 125px;
+  height: 65px;
+  border: none;
+  position: relative;
+}
+
+.s1 {
+  background:url(https://s3.amazonaws.com/skinmedica/img/00-next-button.png);/*(/img/00-next-button.png);*/
+  background-repeat: no-repeat;
+  top: 977px;
+  left: 877px;
+  width: 125px;
+  height: 65px;
+  border: none;
+  position: relative;
+}
+
+.home {
+  background:url(https://s3.amazonaws.com/skinmedica/img/00-Home-btn-1.png);
+  /*(/img/00-Home-btn-1.png);*/
+  background-repeat: no-repeat;
+  top: 977px;
+  left: 877px;
+  width: 130px;
+  height: 70px;
+  border: none;
+  position: relative;
+}
+
+/*S1*/
+.S1i1 {
+  position:absolute;
+  left:150px;
+  top:180px;
+  width:600px;
+  height:auto;
+}
+
+.S1i2 {
+  position:absolute;
+  left:800px;
+  top:-30px;
+  width:624px;
+  height:auto;"
+}
+
+.S1i3 {
+  position:absolute;
+  left:1430px;
+  top:185px;
+  width:350px;
+  height:auto;"
+}
+
+.S1h2 h2 {
+  position: absolute;
+  top: 1000px;
+  left:700px;
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  height:100px;
+}
+
+
+/*S2*/
+.S2i1 {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 2000px;
+  height: inherit;
+}
+
+.S2h1 h1 {
+  position: absolute;
+  left:420px;
+  top:420px;
+  text-align: center;
+}
+.S2h3 h3 {
+  position: absolute;
+  left:560px;
+  top:530px;
+}
+
+/*S3*/
+.S3i1 {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 2000px;
+  height: inherit;
+}
+
+.S3h1 h1 {
+  position: absolute;
+  left:580px;
+  top:420px;
+  text-align: center;
+}
+.S3h3 h3 {
+  position: absolute;
+  left:510px;
+  top:530px;
+}
+
+.instyle {
+  position: absolute;
+  left:820px;
+  top:650px;
+  width:450px;
+}
+
+/*S4*/
+.S4h1 h1 {
+  position: absolute;
+  left:900px;
+  top:380px;
+  text-align: left;
+}
+
+.S4h3 h3 {
+  position: absolute;
+  left:900px;
+  top:640px;
+  text-align: left;
+}
+
+.S4i1 {
+  position: absolute;
+  left:-140px;
+  top:0px;
+  object-fit: cover;
+  width: 1000px;
+  height: inherit;
+}
+
+/*S5*/
+.S5h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+}
+
+.S5h3 h3 {
+  text-align: left;
+}
+
+.S5-circle-graph {
+  width: 200px;
+}
+.S5i1 {
+  position: absolute;
+  left:660px;
+  top:640px;
+}
+
+.large-text h1 {
+  font-family: "Gotham medium",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+  position: absolute;
+  left:910px;
+  top:700px;
+  text-align: left;
+  font-weight: 900;
+  font-size:80px;
+}
+
+/*S6*/
+
+.S6i1 {
+  position: absolute;
+  left:520px;
+  top:0px;
+  object-fit: cover;
+  width: 1600px;
+  height: inherit;
+}
+
+.circlesize {
+  width:270px;
+}
+
+.listsize {
+  width:inherit;
+  height:75px;
+}
+
+.S6i2 {
+  position: absolute;
+  left:550px;
+  top:140px;
+}
+
+.S6i3 {
+  position: absolute;
+  left:550px;
+  top:390px;
+}
+
+.S6i4 {
+  position: absolute;
+  left:550px;
+  top:640px;
+}
+
+/*list images*/
+.S6i5 {
+  position: absolute;
+  left:667px;
+  top:245px;
+}
+
+.S6i6 {
+  position: absolute;
+  left:667px;
+  top:495px;
+}
+
+.S6i7 {
+  position: absolute;
+  left:647px;
+  top:745px;
+}
+
+
+.greybug {
+  position: absolute;
+  left:57px;
+  width:200px;
+  top:40px;
+  opacity: 1;
+}
+
+.S6h1 h1 {
+  position: absolute;
+  left:57px;
+  top:360px;
+  text-align: left;
+  letter-spacing:4px;
+  font-stretch: 10%;
+}
+
+
+.S6h3 h3 {
+  position: absolute;
+  left:1455px;
+  top:460px;
+  text-align: left;
+
+}
+
+/*S7*/
+.S7h1 h1 {
+  position: absolute;
+  left:25px;
+  top:300px;
+  text-align: left;
+  letter-spacing: 4px;
+}
+
+/*S8*/
+.S8h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+}
+
+.S8h3 h3 {
+  position: absolute;
+  left:57px;
+  top:690px;
+}
+
+.S8h4 h4  {
+  position: absolute;
+  left:57px;
+  top:1000px;
+  text-align: left;
+}
+
+.S8background {
+  position: absolute;
+  left:20px;
+  top:0px;
+  width: 1900px;
+  height: 2000;
+}
+
+
+.S8graphlines {
+  position: absolute;
+  left:768px;
+  top:300px;
+  width:1030px;
+  height:580px;
+}
+
+.graphsidetext {
+  position: absolute;
+  left:1840px;
+  top:400px;
+  width:18px;
+}
+
+.S8i2 {
+  position: absolute;
+  left:635px;
+  top:200px;
+  width: 1300px;
+  height: inherit;
+}
+
+.s8block1bar1{
+  position: absolute;
+  left:780px;
+  top:298px;
+  width:930px;
+}
+
+.S8graphcol1 {
+  position:absolute;
+  left: 654px;
+  width: 117px;
+}
+
+.S8graphcol2 {
+  position:absolute;
+  left: 770px;
+}
+
+.S8graphcol3 {
+  position: absolute;
+  left: 965px;
+}
+
+.S8graphcol4 {
+  position:absolute;
+  left: 1150px;
+}
+
+.S8graphcol5 {
+  position:absolute;
+  left: 1345px;
+}
+
+.S8graphcol6 {
+  position:absolute;
+  left: 1530px;
+}
+
+.S8graphcol7 {
+  position:absolute;
+  left: 1725px;
+  width: 200px;
+}
+
+.S8reveal {
+  position: absolute;
+  top:917px;
+  height: 162px;
+}
+
+
+/*S9*/
+.S9h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+}
+
+.S9h2a h2 {
+  position: absolute;
+  left:825px;
+  top:660px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.S9h2b h2 {
+  position: absolute;
+  left:1385px;
+  top:660px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.S9h4 h4 {
+  position: absolute;
+  left:57px;
+  top:860px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.S9i1 {
+  position: absolute;
+  left: 767px;
+  top: 0px;
+  width: 470px;
+  height: inherit;
+}
+
+.S9i2 {
+  position: absolute;
+  left: 790px;
+  top: 373px;
+  width: 350px;
+  height: inherit;
+}
+
+.S9i3 {
+  position: absolute;
+  left: 1300px;
+  top: 0px;
+  width: 467px;
+  height: inherit;
+}
+
+.S9i4 {
+  position: absolute;
+  left: 1325px;
+  top: 345px;
+  width: 328px;
+  height: inherit;
+}
+
+.S9i5 {
+  position: absolute;
+  left: 790px;
+  top: 730px;
+  width: 150px;
+  height: inherit;
+}
+
+.S9i6 {
+  position: absolute;
+  left: 1320px;
+  top: 730px;
+  width: 150px;
+  height: inherit;
+}
+
+.S9i7 {
+  position: absolute;
+  left: 1300px;
+  top: 790px;
+  width: 387px;
+  height: inherit;
+}
+
+
+.S9cover {
+  top: 647px;
+}
+
+/*S10*/
+
+.S10h1 h1 {
+  position: absolute;
+  left:1150px;
+  top:200px;
+  text-align: left;
+}
+
+.S10h3 h3 {
+  position: absolute;
+  left:1150px;
+  top:400px;
+  text-align: left;
+  line-height: 70px;
+  font-weight: 800;
+}
+
+.S10i1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: inherit;
+}
+
+/*S11*/
+.S11i1 {
+  position:absolute;
+  left:600px;
+  top:120px;
+  width:300px;
+  height:auto;
+}
+
+.S11text {
+  position: absolute;
+  left:900px;
+  top:170px;
+  width:760px;
+}
+
+
+/*S12*/
+.S12h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+}
+
+.S12h4 h4 {
+  position: absolute;
+  left:57px;
+  top:860px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.S12i1 {
+  position: absolute;
+  left: 1080px;
+  top: 0px;
+  width: 500px;
+  height: inherit;
+}
+
+.S12i2 {
+  position: absolute;
+  left: 1130px;
+  top: 216px;
+  width: 345px;
+  height: inherit;
+}
+
+.S12i3 {
+  position: absolute;
+  left: 1080px;
+  top: 579px;
+  width: 500px;
+  height: inherit;
+}
+
+.S12cover {
+  top: 590px;
+}
+
+.S12coverleft {
+  position: absolute;
+  left: 1335px;
+  top: 565px;
+  width: 80px;
+  height: 50px;
+}
+
+.S12coverright {
+  position: absolute;
+  left: 1085px;
+  top: 565px;
+  width: 200px;
+  height: 50px;
+}
+
+/*S15*/
+.resultsh1-15 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+  line-height: normal;
+  font-size: 45px;
+  letter-spacing: normal;
+}
+
+.S15h2 h2 {
+    font-family: "Gotham",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+    position: absolute;
+    left:850px;
+    top:730px;
+    font-weight: 500;
+    font-size: 30px;
+    width: 800px;
+
+}
+
+.resultsh4-15 h4 {
+  position: absolute;
+  left:57px;
+  top:700px;
+  width: 550px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.S15i2 {
+  position: absolute;
+  left: 1250px;
+  top: 200px;
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+.after15 h2 {
+  position: absolute;
+  left:1450px;
+  top:160px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+/*S16*/
+.S16h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  width: 650px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+
+}
+
+.S16h4 h4 {
+  position: absolute;
+  left:57px;
+  top:800px;
+  text-align: left;
+  width: 430px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.S16i1 {
+  position: absolute;
+  left: 725px;
+  top: 178px;
+  width: 1081px;
+  height: inherit;
+}
+
+.S16i2 {
+  position: absolute;
+  left: 783px;
+  top: 195px;
+  width: 895px;
+  height: inherit;
+}
+
+.S16i3 {
+  position: absolute;
+  left: 730px;
+  top: 0px;
+  width: 1000px;
+  height: inherit;
+}
+
+.S16cover {
+  top: -200px;
+  height: 380px;
+}
+
+
+/*S18*/
+
+.S18i1 {
+  position: absolute;
+  left: 830px;
+  top: 200px;
+  object-fit: contain;
+  width: 460px;
+  height: inherit;
+}
+
+.S18i2 {
+  position: absolute;
+  left: 1300px;
+  top: 200px;
+  object-fit: contain;
+  width: 460px;
+  height: inherit;
+}
+
+.resultsh1-18 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  text-align: left;
+  line-height: normal;
+  font-size: 60px;
+  width:600px;
+}
+
+.resultsh4-18 h4 {
+  position: absolute;
+  left:57px;
+  top:700px;
+  width: 550px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+/*S17*/
+.s23.fragment.current-visible.visible:not(.current-fragment) {
+    animation: removed-item-animation 3s cubic-bezier(0.6, -0.05, 0.9, 0.9) forwards;
+}
+@keyframes removed-item-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        line-height: 0px;
+        font-size: 0px;
+        height: 0px;
+    }
+}
+
+/*.fadeout {
+    animation: removed-item-animation 3s cubic-bezier(0.6, -0.05, 0.9, 0.9) forwards;
+}
+@keyframes removed-item-animation {
+    100% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        line-height: 0px;
+        font-size: 0px;
+        height: 0px;
+        display: none;
+    }
+}*/
+
+.threequarter {           /*<div class="leftfullsize tertiary" data-fragment-index="1"></div>*/
+  position: absolute;
+  left:550px;
+  top:0px;
+  width: 500px;
+  height:1000px;
+
+}
+
+
+/*.s23white {
+  animation: removed-item-animation 2s cubic-bezier(0.6, -0.05, 0.9, 0.9) forwards;
+}
+  @keyframes removed-item-animation {
+      0% {
+          opacity: 1;
+      }
+
+      100% {
+          opacity: 0;
+          line-height: 0px;
+          font-size: 0px;
+          height: 0px;
+          display: none;
+      }
+  }
+}*/
+
+/*S19*/
+.S19h1 h1 {
+  position: absolute;
+  left:57px;
+  top:300px;
+  width: 650px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: left;
+
+}
+
+.S19h4 h4 {
+  position: absolute;
+  left:57px;
+  top:800px;
+  text-align: left;
+  width: 430px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.S19i1 {
+  position: absolute;
+  left: 670px;
+  top: 0px;
+  width: 800px;
+  height: inherit;
+}
+
+.S19i2 {
+  position: absolute;
+  left: 1480px;
+  top: 270px;
+  width: 410px;
+  height: inherit;
+}
+
+.S19i3 {
+  position: absolute;
+  left: 700px;
+  top: 283px;
+  width: 694px;
+  height: inherit;
+}
+
+.S19i4 {
+  position: absolute;
+  left: 1513px;
+  top: 280px;
+  width: 296px;
+  height: inherit;
+}
+
+.S19i5 {
+  position: absolute;
+  left: 670px;
+  top: 678px;
+  width: 800px;
+  height: inherit;
+}
+
+.S19i6 {
+  position: absolute;
+  left: 1480px;
+  top: 0px;
+  width: 410px;
+  height: inherit;
+}
+
+.S19cover-a {
+  top: 678px;
+  left: 650px;
+  width: 800px;
+  height: 400px;
+
+}
+
+.S19cover-b {
+  left: 1481px;
+  top: -130px;
+  width: 355px;
+  height: 400px;
+}
+
+.S19cover-1 {
+  position:absolute;
+  left: 670px;
+  top: 673px;
+  width: 357px;
+  height: 40px;
+  border-top: 1px solid #66605a !important;
+}
+
+.S19cover-2 {
+  position:absolute;
+  left: 1072px;
+  top: 673px;
+  width: 357px;
+  height: 40px;
+  border-top: 1px solid #66605a !important;
+}
+
+.S19cover-3 {
+  position:absolute;
+  left: 1480px;
+  top: 240px;
+  width: 360px;
+  height: 40px;
+  border-bottom: 1px solid #66605a !important;
+}
+/*Tables*/
+.table h1 {
+  position: absolute;
+  left: 355px;
+  top: 100px;
+  width: 1000px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.table h4  {
+  position: absolute;
+  left:60px;
+  top:950px;
+  text-align: center;
+  width: 1920px;
+}
+
+/*S20*/
+.S20i1 {
+  position: absolute;
+  top: 200px;
+  left: 57px;
+  width: 1810px;
+}
+
+.S20i2 {
+  position: absolute;
+  top: 275px;
+  left: 90px;
+  width: 180px;
+  height: inherit;
+}
+
+.S20i3 {
+  position: absolute;
+  top: 323px;
+  left: 330px;
+  width: 530px;
+  height: inherit;
+}
+
+.S20i4 {
+  position: absolute;
+  top: 435px;
+  left: 915px;
+  width: 345px;
+  height: inherit;
+}
+
+.S20i5 {
+  position: absolute;
+  top: 413px;
+  left: 1317px;
+  width: 182px;
+  height: inherit;
+}
+
+.S20i6 {
+  position: absolute;
+  top: 580px;
+  left: 1560px;
+  width: 270px;
+  height: inherit;
+}
+
+
+
+
+
+/*S21*/
+.S21i1 {
+  position: absolute;
+  top: 200px;
+  left: 57px;
+  width: 1810px;
+}
+
+.S21i2 {
+  position: absolute;
+  top: 275px;
+  left: 90px;
+  width: 180px;
+  height: inherit;
+}
+
+.S21i3 {
+  position: absolute;
+  top: 300px;
+  left: 380px;
+  width: 750px;
+  height: inherit;
+}
+
+.S21i4 {
+  position: absolute;
+  top: 507px;
+  left: 1198px;
+  width: 315px;
+  height: inherit;
+}
+
+.S21i5 {
+  position: absolute;
+  top: 515px;
+  left: 1543px;
+  width: 310px;
+  height: inherit;
+}
+
+/*S22*/
+.S22i1 {
+  position:absolute;
+  top:120px;
+  left:600px;
+  width:300px;
+  height:auto;
+}
+
+.S22text {
+  position: absolute;
+  top:170px;
+  left:900px;
+  width:760px;
+}
+
+/*S23*/
+.S23i1{
+  position: absolute;
+  top:100px;
+  left: 560px;
+  width:200px
+}
+
+.S23i2{
+  position: absolute;
+  top:35px;
+  left: 640px;
+  width:528px
+}
+
+.S23text {
+  position: absolute;
+  top:170px;
+  left:1100px;
+  width:760px;
+}
+
+/*Quiz*/
+.question-title h2 {
+  position:absolute;
+  top:300px !important;
+}
+.Qquizh2 h2 {
+  position: absolute;
+  left:140px;
+  top:440px;
+  text-align: left;
+}
+
+.Qtitle h2 {
+  position: absolute;
+  left:50px;
+  top:210px;
+  text-align: left;
+}
+
+.Qquestion h2{
+  position: absolute;
+  left:550px;
+  top:425px;
+  width: 470px;
+}
+
+.quiz_1 {
+
+}
+.Qcolor{
+  background-color: #d9d8d4;
+}
+.Qi {
+  position: absolute;
+  left:500px;
+  top:0px;
+  object-fit: cover;
+  width: 1350px;
+  height: inherit;
+}
+
+.Qnumber {
+  position: absolute;
+  left:155px;
+  top:490px;
+  width:170px;
+}
+.Qquizfullright {
+  position: absolute;
+  left:1100px;
+  top:0px;
+  width: inherit;
+  height: inherit;
+}
+
+.Qblackbar {
+  position: absolute;
+  left:0px;
+  top: 200px;
+  width: 1700px;
+  height: 70px;
+  background-color:black;
+  border: 2px solid white !important;
+  opacity: .7;
+}
+
+.Qasize {
+  font-family: "Gotham",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 900;
+  line-height: 1;
+  background:none;
+  border:none;
+  font-size: 35px;
+}
+
+#Qa1_1 {
+  position:absolute;
+  left:1160px;
+  top:430px;
+}
+
+#Qa1_2 {
+  position:absolute;
+  left:1160px;
+  top:490px;
+}
+
+#Qa1_3 {
+  position:absolute;
+  left:1160px;
+  top:550px;
+}
+
+#Qa1_4 {
+  position:absolute;
+  left:1160px;
+  top:610px;
+}
+
+#Qa1_5 {
+  position:absolute;
+  left:1160px;
+  top:670px;
+}
+
+#Qa2_1 {
+  position:absolute;
+  left:1160px;
+  top:430px;
+}
+
+#Qa2_2 {
+  position:absolute;
+  left:1160px;
+  top:490px;
+}
+
+#Qa2_3 {
+  position:absolute;
+  left:1160px;
+  top:550px;
+}
+
+#Qa2_4 {
+  position:absolute;
+  left:1160px;
+  top:610px;
+}
+
+#Qa3_1 {
+  position:absolute;
+  left:1160px;
+  top:430px;
+}
+
+#Qa3_2 {
+  position:absolute;
+  left:1160px;
+  top:490px;
+}
+
+#Qa4_1 {
+  position:absolute;
+  left:1160px;
+  top:430px;
+}
+
+#Qa4_2 {
+  position:absolute;
+  left:1160px;
+  top:490px;
+}
+
+#Qa4_3 {
+  position:absolute;
+  left:1160px;
+  top:550px;
+}
+
+#Qa4_4 {
+  position:absolute;
+  left:1160px;
+  top:610px;
+}
+
+#Qa5_1 {
+  position:absolute;
+  left:1160px;
+  top:430px;
+}
+
+#Qa5_2 {
+  position:absolute;
+  left:1160px;
+  top:490px;
+}
+
+#Qa5_3 {
+  position:absolute;
+  left:1160px;
+  top:550px;
+}
+
+#Qa5_4 {
+  position:absolute;
+  left:1160px;
+  top:610px;
+}
+
+/*S29 End of Quiz*/
+.S29h1 h1 {
+  position: absolute;
+  left:182px;
+  top:420px;
+}
+
+.S29h3 h3 {
+  position: absolute;
+  left:300px;
+  top:600px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.serum-info {
+  margin-top: 6rem !important;
+  color: #717271;
+  text-align: left;
+
+}
+.serum-info h1 {
+  margin-bottom:15px;
+  font-size: 3.5rem;
+  font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+  text-align: left;
+}
+
+.brand-bg {
+  background-color: #A97EB1;
+  color: #FFFFFE;
+  font-family: 'Gotham light'
+}
+
+.brand-bg .description h1 {
+  padding: 25px;
+  font-size: 65px;
+  font-weight: 200;
+  line-height: 75px;
+  text-align: left;
+  font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.serum-info ul{
+  padding-left: 45px;
+}
+
+
+.serum-info p, .serum-info span {
+  padding: 10px;
+}
+.serum-info p, .serum-info li, .serum-info span  {
+  margin: 0;
+    font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff;
+
+}
+.serum-info p {
+  margin: 0;
+    font-family: "Gotham light",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff;
+}
