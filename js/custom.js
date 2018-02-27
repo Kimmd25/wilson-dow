@@ -12,7 +12,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-1-o": {
           "height": 650,
@@ -40,7 +40,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-2-1o": {
           "height": 650,
@@ -96,7 +96,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-3-1o": {
           "height": 650,
@@ -124,7 +124,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-4.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-4-1o": {
           "height": 650,
@@ -168,6 +168,13 @@
           "top": 200,
           "background-img": "img/onc-spread4-5a-5b.png"
         },
+        "o-chall-bn-5": {
+          "height": 650,
+          "width": 1000,
+          "left": 200,
+          "top": 200,
+          "background-img": "img/challenge-popover.png"
+        },
         "pop-bn-5-1ao": {
           "height": 650,
           "width": 1000,
@@ -194,7 +201,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-1-1u": {
           "height": 650,
@@ -236,7 +243,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-2-1u": {
           "height": 650,
@@ -292,7 +299,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-3-1u": {
           "height": 650,
@@ -327,7 +334,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-4.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-4-1u": {
           "height": 650,
@@ -359,7 +366,7 @@
           "background-img": "img/uro-spread4-4.png"
         },
 
-        "pop-bn-5-3au": {
+        "pop-bn-4-5au": {
           "height": 650,
           "width": 1000,
           "left": 200,
@@ -385,7 +392,7 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/onc-challenge-bt-4.png"
+          "background-img": "img/challenge-popover.png"
         },
         "pop-bn-5-1u": {
           "height": 650,
@@ -420,28 +427,28 @@
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/uro-spread5-1.png"
+          "background-img": "img/challenge-popover.png"
         },
         "ob-chall-bn-2": {
           "height": 650,
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/uro-spread5-2.png"
+          "background-img": "img/challenge-popover.png"
         },
         "ob-chall-bn-3": {
           "height": 650,
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/uro-spread5-3a-3b.png"
+          "background-img": "img/challenge-popover.png"
         },
         "ob-chall-bn-4": {
           "height": 650,
           "width": 1000,
           "left": 200,
           "top": 200,
-          "background-img": "img/uro-spread5-3a-3b.png"
+          "background-img": "img/challenge-popover.png"
         }
       };
 
