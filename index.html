@@ -1,1234 +1,1017 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>SkinMedica University</title>
-    <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">-->
-
-    <link rel="stylesheet" type="text/css" href="./css/reveal.css">
-    <link rel="stylesheet" type="text/css" href="./css/animate.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="./css/white.css">-->
-
-    <script src='//cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js'></script>
-    <script src="./js/jquery.min.js"></script>
-    <!--<script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>-->
-    <script src="./js/svg.js"></script>
-    <script src="./js/three.min.js"></script>
-    <script src="./js/DDSLoader.js"></script>
-    <script src="./js/MTLLoader.js"></script>
-
-    <script src="./js/OBJLoader.js"></script>
-    <style>
-
-
-  .image {
-    -webkit-animation:spin 4s linear;
-    -moz-animation:spin 4s linear;
-    animation:spin 4s linear;
-    -webkit-transform: translate3d(0, 0, 0);
-
-}
-.hide-img{display: none;}
-@-webkit-keyframes spin {
-from { -webkit-transform:rotateX(90deg) }
-to { -webkit-transform:rotateX(0deg) }
-}
-@-moz-keyframes spin {
-from { -moz-transform:rotateX(90deg) }
-to { -moz-transform:rotateX(0deg) }
-}
-@keyframes spin {
-from { transform:rotateX(90deg) }
-to { transform:rotateX(0deg) }
-}
-@keyframes pound {
-  from { transform: none; }
-  50% { transform: scale(1.05); }
-  to { transform: none; }
-}
-@keyframes poundsmall {
-  from { transform: none; }
-  50% { transform: scale(1.02); }
-  to { transform: none; }
-}
-@keyframes pop {
-  from { transform: none; }
-  100% { transform: scale(1.2); }
-}
-@keyframes shake {
-  0% {transform: rotate(1deg);}
-  25% {transform: rotate(-1deg);}
-  50% {transform: rotate(1.5deg);}
-  75% {transform: rotate(-5deg);}
-  100% {transform: rotate(0deg);}
-}
-
-    section {height: 100%;width: 100%;}
-
-
-.pound {
-  /* ... */
-  animation: pound 1.5s infinite;
-  transform-origin: center;
-}
-.pound-small {
-  /* ... */
-  animation: poundsmall 5s infinite;
-  transform-origin: center;
-}
-.pop:hover {
-  animation: shake 1s infinite;
-  transform-origin: center;
-}
-svg.arrow{width: 60px;height:120px;}
-  </style>
-  </head>
-  <body>
-
-    <div class="reveal">
-      <div class="slides">
-
-
-
-
-  <!--S1-->
-          <section>
-
-                <div data-animate="fadeIn">
-                    <audio data-autoplay src="./img/s01-audio-1.mp3"></audio>
-                    <img src="./img/s01-logo-lockup.png" class="S1i1">
-                </div>
-                <div data-animate="fadeIn">
-                    <img src="./img/s01-image1.png" class="S1i2">
-                </div>
-                <div data-animate="fadeIn">
-                    <img src="./img/s01-image2.png" class="S1i3">
-                </div>
-                <div class="footer secondary" data-animate="fadeIn"></div>
-                <div class="size S1h2 main" data-animate="fadeIn">
-                  <h2>Results Rooted in Science</h2>
-                </div>
-
-            <div>
-              <button type="button" class="next s1"></button>
-            </div>
-          </section>
-
-
-
-<!--S2-->
-          <section data-transition-speed: "5000">
-              <img class="S2i1" src="./img/s02-background.png" data-fragment-index="0" data-animate="fadeIn">
-              <audio data-autoplay src="./img/s02-audio-1.mp3"></audio>
-              <div class="topleftbug" data-fragment-index="1" data-animate="fadeIn">
-                <img src="./img/00-skin-logo-white-larger.png" class="whitebug">
-              </div>
-              <div data-fragment-index="2" data-animate="fadeIn" class="size main S2h1">
-                <h1>Tissue Nutrient Solution (TNS<sup class="regmark">&reg;</sup>)</h1>
-                <div data-fragment-index="3" data-animate="fadeIn" class="size main S2h3">
-                  <h3>Industry-Leading growth Factor Technology
-                  </br>for Remarkable Skin Rejuvenation</h3>
-                </div>
-              </div>
-
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-          </section>
-
-<!--S3-->
-          <section data-transition-speed: "5000">
-              <img class="S3i1" src="./img/s02-background.png" data-fragment-index="0" data-animate="fadeIn">
-              <audio data-autoplay src="./img/s03-slide-3.mp3"></audio>
-              <div class="topleftbug" data-fragment-index="1" data-animate="fadeIn">
-                <img src="./img/00-skin-logo-white-larger.png" class="whitebug">
-              </div>
-              <div data-fragment-index="2" data-animate="fadeIn" class="size main S3h1">
-                <h1>Award-Winning Skin Care</h1>
-                <div data-fragment-index="3" data-animate="fadeIn" class="size main S3h3">
-                  <h3>Industry-Leading growth Factor Technology since 2002</h3>
-                </div>
-              </div>
-              <div data-fragment-index="1" data-animate="fadeIn">
-                <img src="./img/s03-text2.png" class="instyle">
-              </div>
-
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-          </section>
-
-<!--S4-->
-          <section>
-              <img class="S4i1" src="./img/s04-image1.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-            <div class="topleftbug" data-fragment-index="1" data-animate="fadeIn">
-              <img src="./img/00-skin-logo-white-larger.png" class="whitebug">
-            </div>
-            <div class="fragment size secondary S4h1" data-fragment-index="2" data-animate="fadeIn">
-              <h1>A Pioneer and Legacy </br>in Skin Care</h1>
-            </div>
-            <div data-fragment-index="3" data-animate="fadeIn" class="size secondary S4h3">
-              <h3>Dr. Richard Fitzpatrick, SkinMedica<sup class="regmark">&reg;</sup> co-founder
-                </br>
-                </br>Past President of the American Society</br>For Laser Medicine & Surgery (ASLMS)
-                </br>
-                </br>Pioneer in skin rejuvenation laser treatments
-              </h3>
-            </div>
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-          </section>
-
-<!--S5-->
-          <section>
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-            <div class="fragment" data-fragment-index="1" data-animate="fadeIn" data-autoslide="100">
-              <img src="./img/00-logo-grey-white.png" class="greybug">
-            </div>
-            <div class="fragment size secondary S5h1" data-fragment-index="1" data-animate="fadeIn" data-autoslide="100">
-              <h1>TNS<sup class="regmark">&reg;</sup> Launches and Revolutionizes Skin Care</h1>
-            </div>
-
-          <div class="fragment size S5h3 secondarytable">
-
-              <table>
-                  <tr>
-                    <td class="column" data-fragment-index="1" data-animate="fadeIn">
-                     <h3>In 2002, SkinMedica<sup class="regmark">&reg;</sup></br>introduced TNS<sup class="regmark">&reg;</sup></h3>
-                    </td>
-
-                    <td class="column left-padding" data-fragment-index="1" data-animate="fadeIn">
-                      <h3>Patented </br>Extraction </br>process</h3>
-                    </td>
-
-                    <td class="columnspan" data-fragment-index="1" data-animate="fadeIn">
-                      <h3>First topical solution made</br> almost entirely (93.6%) of</br>stabilized human fibroblast</br> growth factor secretions
-                      </h3>
-                    </td>
-
-                    <td class="column" data-fragment-index="1" data-animate="fadeIn">
-                      <h3>High protein concentration</h3>
-                    </td>
-
-                    <td class="column" data-fragment-index="1" data-animate="fadeIn">
-                      <h3>Ultimate skin rejuvenation
-                      </h3>
-                    </td>
-                  </tr>
-              </table>
-            </div>
-              <div class="fragment S5i1"  data-fragment-index="2" data-autoslide="450" data-animate="fadeIn rotateIn">
-                <img class="S5-circle-graph" src="./img/s05-circle2.png">
-              </div>
-              <div class="fragment large-text size secondary" data-fragment-index="2" data-autoslide="100" data-animate="fadeIn">
-                <h1>93.6%</h1>
-              </div>
-          </section>
-
-
-<!--S6-->
-          <section class="addFrag">
-            <div class="fragment" data-autoslide="0"></div>
-              <img class="S6i1" src="./img/s06-image1.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                <!--<audio data-autoplay src="./img/s06-audio-1.mp3"></audio>-->
-              <div data-fragment-index="2" data-animate="fadeIn">
-                <img src="./img/00-logo-grey-white.png" class="greybug">
-              </div>
-
-              <div data-fragment-index="3" data-animate="fadeIn" class="size secondary S6h1">
-                <h1>Clinically</br>Tested</br>and Proven</h1>
-              </div>
-              <div class="rightfullsize secondary" data-fragment-index="3"></div>
-                <div data-fragment-index="2" data-animate="fadeIn" class="size main S6h3">
-                <h3>Most rigorously tested,
-                  </br>proven, patient-praised
-                  </br>product of its kind
-                </h3>
-              </div>
-
-              <div class="fragment S6i2"  data-fragment-index="4" data-autoslide="450" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i3" data-fragment-index="6" data-autoslide="1000" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i4" data-fragment-index="8" data-autoslide="1000" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i5" data-fragment-index="5" data-autoslide="1000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list1.png">
-              </div>
-              <div class="fragment S6i6" data-fragment-index="7" data-autoslide="1000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list2.png">
-              </div>
-              <div class="fragment S6i7" data-fragment-index="9" data-autoslide="1000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list3.png">
-              </div>
-
-              <!--<div class="fragment S6i2"  data-fragment-index="4" data-autoslide="450" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i3" data-fragment-index="6" data-autoslide="1000" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i4" data-fragment-index="8" data-autoslide="1000" data-animate="fadeIn rotateIn">
-                <img class="circlesize" src="./img/s06-ring2.png">
-              </div>
-              <div class="fragment S6i5" data-fragment-index="5" data-autoslide="5000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list1.png">
-              </div>
-              <div class="fragment S6i6" data-fragment-index="7" data-autoslide="6000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list2.png">
-              </div>
-              <div class="fragment S6i7" data-fragment-index="9" data-autoslide="10000" data-animate="fadeInRight">
-                <img class="listsize" src="./img/s06-list3.png">
-              </div>-->
-
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-          </section>
-
-<!--S7-->
-
-          <section class="addFrag">
-            <div class="fragment" data-autoslide="0"> </div>
-                  <div class="leftfullsize secondary" data-fragment-index="1" data-autoslide="100">
-                    <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn">
-                  </div>
-
-
-              <div class="fragment" data-fragment-index="1" data-autoslide="100">
-                  <div class="S7h1 size main" data-animate="fadeIn">
-                      <h1>The Science </br>of Protein and</br> Growth Factors</br> for Skin </br> Rejuvenation</h1>
-                  </div>
-
-                  <div class="col all-elements" id="all-elements">
-                      <div class="fragment" data-fragment-index="1" data-autoslide="100">
-                        <img src="img/Snake1.gif" style="position: absolute;left:900px;top:400px;">
-                      </div>
-                      <div class="fragment circle" data-fragment-index="2" data-autoslide="450">
-                        <img data-animate="zoomRotateRev" src="img/s07-circle1.png" style="width:300px;height:300px;position: absolute;left:930px;top:445px;">
-                      </div>
-                      <div class="fragment circle" data-fragment-index="3" data-autoslide="500">
-                        <img data-animate="zoomRotate" src="img/s07-circle2.png" style="width:300px;height:300px;position: absolute;left:1230px;top:445px;">
-                      </div>
-                      <div class="fragment circle" data-fragment-index="4" data-autoslide="450">
-                        <img data-animate="zoomRotateRev" src="img/s07-circle3.png" style="width:300px;height:300px;position: absolute;left:1530px;top:445px;">
-                      </div>
-                      <div class="fragment" data-fragment-index="5" data-autoslide="200">
-                        <svg style="position: absolute;left:1045px;top:325px;transform: rotate(0deg);" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 67.48"><defs><style>.cls-1{fill:#625a57;}</style></defs><title>Arrow</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="4.89 66.74 3.88 66.74 3.88 0 4.89 12.3 4.89 66.74"/><polygon class="cls-1" points="4.38 67.48 0 62.77 0.74 62.08 4.38 65.99 8.02 62.08 8.77 62.77 4.38 67.48"/></g></g></svg>
-                        <img data-animate="fadeInDown" class="" src="img/s07-hex3.png" style="width:200px;height:230px;position: absolute;left:1020px;top:180px;">
-
-                      </div>
-                      <div class="fragment" data-fragment-index="6" data-autoslide="200">
-                        <svg style="position: absolute;left:940px;top:350px;transform: rotate(-30deg);" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 67.48"><defs><style>.cls-1{fill:#625a57;}</style></defs><title>Arrow</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="4.89 66.74 3.88 66.74 3.88 0 4.89 12.3 4.89 66.74"/><polygon class="cls-1" points="4.38 67.48 0 62.77 0.74 62.08 4.38 65.99 8.02 62.08 8.77 62.77 4.38 67.48"/></g></g></svg>
-                        <img data-animate="fadeInDown" class="" src="img/s07-hex2.png" style="width:200px;height:230px;position: absolute;left:800px;top:182px;">
-
-                      </div>
-                      <div class="fragment" data-fragment-index="7" data-autoslide="200">
-                        <svg style="position: absolute;left:865px;top:430px;transform: rotate(-65deg);" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.76 67.48"><defs><style>.cls-1{fill:#625a57;}</style></defs><title>Arrow</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="4.89 66.74 3.88 66.74 3.88 0 4.89 12.3 4.89 66.74"/><polygon class="cls-1" points="4.38 67.48 0 62.77 0.74 62.08 4.38 65.99 8.02 62.08 8.77 62.77 4.38 67.48"/></g></g></svg>
-                        <img data-animate="fadeInLeft" class="" src="img/s07-hex1.png" style="width:200px;height:230px;position: absolute;left:695px;top:380px;">
-
-                      </div>
-                      <div class="fragment" data-fragment-index="8" data-autoslide="200">
-                        <img data-animate="fadeInUp" class="" src="img/BottomGroup.png" style="width:602px;height:364px;position: absolute;left:1095px;top:575px;">
-                      </div>
-                  </div>
-              </div>
-
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-          </section>
-
-<!--S8-->
-          <section class="addFrag">
-            <div class="fragment" data-autoslide="0"></div>
-
-            <div data-fragment-index="1" data-autoslide="100">
-              <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-            </div>
-
-            <div class="size secondary S8h1" data-fragment-index="0" data-autoslide="100">
-              <h1 data-animate="fadeIn">TNS<sup class="regmark">&reg;</sup>:</br>The Gold</br>Standard</br>in Skin</br>Rejuvenation</br>Products</h1>
-              <div>
-                <div>
-                  <div class="graphsizemain graph-light S8graphcol1" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizesecondary graph-dark S8graphcol2" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizemain graph-light S8graphcol3" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizesecondary graph-dark S8graphcol4" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizemain graph-light S8graphcol5" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizesecondary graph-dark S8graphcol6" data-fragment-index="0" data-autoslide="100"></div>
-                  <div class="graphsizemain graph-light S8graphcol7" data-fragment-index="0" data-autoslide="100"></div>
-                </div>
-              </div>
-
-              <div class="fragment" data-fragment-index="1" data-autoslide="100" data-animate="fadeIn">
-                <img class="S8graphlines" src="./img/s08-Lines-Numbers.png">
-              </div>
-              <div class="fragment" data-fragment-index="2" data-autoslide="5000">
-                <img class="s8block1bar1" src="./img/s08-chartdata.png" data-animate="fadeInUp">
-              </div>
-              <div class="fragment" data-fragment-index="1" data-autoslide="100">
-                <img class="graphsidetext" data-animate="fadeIn" src="./img/s08-FOLDS CHANGE OVER CO.png">
-              </div>
-
-              <div class="cover" data-fragment-index="0" data-autoslide="100"></div>
-              <div>
-                <div class="graphsizemain graph-light S8reveal S8graphcol1" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizesecondary graph-dark S8reveal S8graphcol2" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizemain graph-light S8reveal S8graphcol3" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizesecondary graph-dark S8reveal S8graphcol4" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizemain graph-light S8reveal S8graphcol5" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizesecondary graph-dark S8reveal S8graphcol6" data-fragment-index="0" data-autoslide="100"></div>
-                <div class="graphsizemain graph-light S8reveal S8graphcol7" data-fragment-index="0" data-autoslide="100"></div>
-              </div>
-
-              <div class="S8h4 size secondary" data-fragment-index="0" data-autoslide="100">
-                  <h4 data-animate="fadeIn">To discuss this chart, please contact our Medical </br> Affairs department at 1-800-433-8871.</h4>
-              </div>
-            </div>
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-
-<!--S9-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="1" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-            <div class="fragment" data-fragment-index="2" data-autoslide="100">
-                <div class="S9h1 size main" data-animate="fadeIn">
-                    <h1>Stabilized,</br>Concentrated</br>Growth Factors</h1>
-                </div>
-            </div>
-
-            <div class="fragment S9h4 size main" data-fragment-index="2" data-autoslide="100">
-                <h4 data-animate="fadeIn">*Competitors did not have detectable levels of VEGF
-                </br>and HGF.
-                </br>1. Mehta RC, et al. <i>J Drugs Dermotal.</i> 2008;7(9):864-871.
-              </br>2. Sundaram H, et al. <i>J Drugs Dermatol.</i> 2009;8(5 suppl):4-13.</h4>
-            </div>
-          <div class="fragment" data-fragment-index="1" data-autoslide="100" data-animate="fadeIn">
-            <img src="./img/s09-chart-left.png" class="S9i1">
-            <img src="./img/s09-right-chart.png" class="S9i3">
-          </div>
-
-          <div class="fragment" data-fragment-index="3" data-autoslide="1000"></div>
-
-          <div class="fragment" data-fragment-index="4" data-autoslide="2000">
-            <img class="S9i2" data-animate="fadeInUp" src="./img/s09-left-bars.png">
-            <img class="S9i4" data-animate="fadeInUp" src="./img/s09-bars-right.png">
-          </div>
-
-          <div class="cover S9cover" data-fragment-index="0" data-autoslide="100"></div>
-
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img class="S9i5" data-animate="fadeIn" src="./img/s09-legend-left.png">
-            <img class="S9i6" data-animate="fadeIn" src="./img/s09-legend-right.png">
-            <img class="S9i7" data-animate="fadeIn" src="./img/s09-bottom-text2.png">
-          </div>
-
-        <div class="fragment" data-fragment-index="0" data-autoslide="100" data-animate="fadeIn">
-          <div class="S9h2a size secondary">
-              <h2>Protein Concentration (pg/mL)
-              </br>Mean % Change</h2>
-          </div>
-        </div>
-
-        <div class="fragment" data-fragment-index="0" data-autoslide="100" data-animate="fadeIn">
-          <div class="S9h2b size secondary">
-              <h2>Concentration (pg/mL)
-              </br>Mean % Change</h2>
-          </div>
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-
-<!--S10-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-          <div class="fragment" data-fragment-index="1" data-autoslide="100" data-animate="fadeIn">
-            <img src="./img/s10 Background.png" class="S10i1">
-          </div>
-          <div class="secondary" data-fragment-index="1" data-autoslide="100">
-            <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-          </div>
-
-            <div class="fragment" data-fragment-index="3" data-autoslide="1000">
-                <div class="S10h1 size main" data-animate="fadeIn">
-                    <h1>Patient Profile:</br>TNS<sup class="regmark">&reg;</sup>Products</h1>
-                </div>
-            </div>
-
-            <div class="fragment" data-fragment-index="3" data-autoslide="1000">
-              <div class="S10h3 size main" data-animate="fadeIn">
-                <h3>Fine lines
-                </br>Rough skin texture
-                </br>Post procedure
-                </br> Signs of sun damage (UV exposure)</h3>
-              </div>
-            </div>
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-        </section>
-
-<!--S11-->
-        <section class="addFrag">
-          <div data-fragment-index="1" data-autoslide="100">
-            <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-          </div>
-
-          <div class= "fragment"></div>
-            <img class="fragment S11i1" data-fragment-index="1" data-autoslide="3000"  data-animate="fadeIn" src="img/s11-image.png">
-
-            <div class="S11text serum-info fragment" data-fragment-index="1" data-autoslide="3000" data-animate="fadeIn">
-              <h1>TNS Recovery Complex<sup class="regmark">&reg;</sup></h1>
-              <p>TNS Recovery Complex<sup class="regmark">&reg;</sup> has been clinically shown to reduce the appearance of wrinkles by up to 37% in 90 days</p>
-            </br>
-              <span>Key Ingredients</span>
-              <ul>
-                <li>TNS growth factor blend<sup class="regmark">&reg;</sup></li>
-              </ul>
-            </br>
-              <span>Key Benefits</span>
-              <ul>
-                <li>Rejuvenates skin</li>
-                <li>Reduces the appearance of fine lines and wrinkles</li>
-                <li>Enhances skin texture</li>
-                <li>Contains 93.6% TNS<sup class="regmark">&reg;</sup></li>
-              </ul>
-
-              <p>Appropriate for all skin types.</p>
-
-              <p><span style="font-weight:900">CAUTION:</span> Patients should not apply products containing glycolic acid immediately on top of any TNS<sup class="regmark">&reg;</sup> product.</p>
-            </div>
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-        </section>
-
-<!--S12-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="1" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-            <div class="fragment" data-fragment-index="2" data-autoslide="100">
-                <div class="S12h1 size main" data-animate="fadeIn">
-                    <h1>Clinical Results:</br>TNS<sup class="regmark">&reg;</sup> and </br> Collagen</h1>
-                </div>
-            </div>
-
-            <div class="fragment S12h4 size main" data-fragment-index="2" data-autoslide="100">
-                <h4 data-animate="fadeIn"> Sundaram H, et al. <i>JDrugs Dermatol.</i> 2009;8(5 suppl):4-13.</h4>
-            </div>
-          <div class="fragment" data-fragment-index="1" data-autoslide="100" data-animate="fadeIn">
-            <img src="./img/s12-top-bg2.png" class="S12i1">
-          </div>
-
-          <div class="fragment" data-fragment-index="3" data-autoslide="2000"></div>
-
-          <div class="fragment" data-fragment-index="4" data-autoslide="2000">
-            <img class="S12i2" data-animate="fadeInUp" src="./img/s12-bars.png">
-          </div>
-
-          <div class="cover S12cover" data-fragment-index="0" data-autoslide="100"></div>
-
-
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img class="S12i3" src="./img/s12-bot-bg2.png">
-          </div>
-
-          <div class="fragment graph-dark S12coverleft" data-fragment-index="1" data-autoslide="100"></div>
-          <div class="fragment graph-light S12coverright" data-fragment-index="1" data-autoslide="100"></div>
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-<!--S13-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"></div>
-                <div class="leftfullsize secondary" data-fragment-index="0" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-                <div class="fragment" data-fragment-index="0" data-autoslide="100">
-                    <div class="resultsh1 size main" data-animate="fadeIn">
-                        <h1 data-animate="fadeIn">Clinical Results: TNS Recovery Complex<sup class="regmark">&reg;</sup></h1>
-                    </div>
-                </div>
-
-                <div class="fragment resultsh4 size main" data-fragment-index="0" data-autoslide="100">
-                    <h4 data-animate="fadeIn">
-                    Female, Age 59
-                  </br>Unretouched photographs of subject at baseline and 6 months after twice-daily use of the TNS Recovery Complex<sup class="regmark">&reg;</sup> show a reduction in the appearance of periorbital wrinkles. Individual results may vary.
-                </br>Mehta RC, et al. <i>JDrugs Dermatol.</i> 2008;7(9):864-871.</h4>
-                </div>
-
-                <div class="fragment" data-fragment-index="1" data-autoslide="1000">
-                    <img class="before-i" src="./img/s13-eyeleft.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="before size secondary">
-                        <h2 data-animate="fadeIn">BASELINE</h2>
-                    </div>
-                </div>
-
-                <div class="fragment" data-fragment-index="2" data-autoslide="500">
-                    <img class="after-i" src="./img/s13-eyeright.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="after size secondary" data-animate="fadeIn">
-                        <h2>MONTH 6</h2>
-                   </div>
-               </div>
-
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-<!--S14-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="0" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-                <div class="fragment" data-fragment-index="0" data-autoslide="100">
-                    <div class="resultsh1 size main" data-animate="fadeIn">
-                        <h1 data-animate="fadeIn">Clinical Results: TNS Recovery Complex<sup class="regmark">&reg;</sup></h1>
-                    </div>
-                </div>
-
-                <div class="fragment resultsh4 size main" data-fragment-index="0" data-autoslide="100">
-                    <h4 data-animate="fadeIn">
-                    Female, Age 51
-                  </br>Unretouched photographs of subject at baseline and 6 months after twice-daily use of the TNS Recovery Complex<sup class="regmark">&reg;</sup> show a reduction in the appearance of periorbital wrinkles. Individual results may vary.
-                </br>Mehta RC, et al. <i>JDrugs Dermatol.</i> 2008;7(9):864-871.</h4>
-                </div>
-
-                <div class="fragment" data-fragment-index="1" data-autoslide="1000">
-                    <img class="before-i" src="./img/s14-eye.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="before size secondary">
-                        <h2 data-animate="fadeIn">BASELINE</h2>
-                    </div>
-                </div>
-
-                <div class="fragment" data-fragment-index="2" data-autoslide="500">
-                    <img class="after-i" src="./img/s14-eyeright.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="after size secondary" data-animate="fadeIn">
-                        <h2>MONTH 6</h2>
-                   </div>
-               </div>
-
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-<!--S15-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="0" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-                <div class="fragment" data-fragment-index="0" data-autoslide="100">
-                    <div class="resultsh1-15 size main" data-animate="fadeIn">
-                        <h1 data-animate="fadeIn">Visible Improvement</br> at Week 8 </br> TNS Recovery Complex<sup class="regmark">&reg;</sup></br> with TOTAL</br>DEFENSE + REPAIR</h1>
-                    </div>
-                </div>
-
-                <div class="fragment resultsh4-15 size main" data-fragment-index="0" data-autoslide="100">
-                    <h4 data-animate="fadeIn">
-                    Female, Age 60
-                  </br>Visible improvement at Week 8 in crepiness and overall skin texture. Unretouched photographs of subject at baseline and 8 weeks after twice-daily use of TNS Recovery Complex<sup class="regmark">&reg;</sup> and once-daily use of TOTAL DEFENSE + REPAIR show the appearance of reduction in laxity and crepiness. Individual results may vary.
-                </br>Data on file, SkinMedica<sup class="regmark">&reg;</sup>.</h4>
-                </div>
-
-                <div class="fragment" data-fragment-index="0" data-autoslide="100">
-                    <div class="S15h2 size secondary" data-animate="fadeIn">
-                        <h2 data-animate="fadeIn">Clinically tested, powerful combination of products proven to visibly rejuvenate <span class="bold">neck skin.</span></h2>
-                    </div>
-                </div>
-
-                <div class="fragment" data-fragment-index="1" data-autoslide="1000">
-                    <img class="before-i" src="./img/s15-eyeleft.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="before size secondary">
-                        <h2 data-animate="fadeIn">BASELINE</h2>
-                    </div>
-                </div>
-
-                <div class="fragment" data-fragment-index="2" data-autoslide="500">
-                    <img class="after-i S15i2" src="./img/s15-eyeright.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="after15 size secondary" data-animate="fadeIn">
-                        <h2>WEEK 8</h2>
-                   </div>
-               </div>
-
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-
-<!--S16-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="1" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-            <div class="fragment" data-fragment-index="2" data-autoslide="100">
-                <div class="S16h1 size main" data-animate="fadeIn">
-                    <h1>Dramatic </br> Improvements with </br>Continued Use on </br>Neck and D&eacute;collet&eacute;</br> TNS Recovery Complex<sup class="regmark">&reg;</sup> </br> with TOTAL DEFENSE </br>+ REPAIR</h1>
-                </div>
-            </div>
-
-            <div class="fragment S16h4 size main" data-fragment-index="2" data-autoslide="100">
-                <h4 data-animate="fadeIn"> Week 4 (n=15), Week 8 (n=15), Week 12 (n=14) At Weeks 8 and 12, all parameters showed statistically significant improvements vs baseline (P<span>&lt;</span>0.05; student's paired t-test).
-                </br> Data on file, SkinMedica<sup class="regmark">&reg;</sup>.</h4>
-            </div>
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img src="./img/s16-bottom-bg.png" class="S16i1">
-          </div>
-
-          <div class="fragment" data-fragment-index="3" data-autoslide="2000"></div>
-
-
-          <div class="fragment" data-fragment-index="4" data-autoslide="1000">
-            <img class="S16i2" data-animate="fadeInDown" src="./img/s16-bars.png">
-          </div>
-
-          <div class="cover S16cover" data-fragment-index="0" data-autoslide="100"></div>
-
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img class="S16i3" src="./img/s16-top-bg.png">
-          </div>
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-
-<!--S17-->
-        <section class="addFrag">
-          <div data-fragment-index="1" data-autoslide="100">
-            <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-          </div>
-
-          <div class= "fragment"></div>
-            <img class="fragment" data-fragment-index="0" data-autoslide="100" style="position:absolute;left:780px;top:193px;width:200px;height:auto;" data-animate="fadeIn" src="img/serum-left.png">
-
-            <div style="position: absolute;left:1050px;top:100px;width:680px" class="serum-info fragment" data-fragment-index="1" data-autoslide="2000" data-animate="fadeIn">
-              <h1>TNS Essential Serum<sup class="regmark">&reg;</sup></h1>
-              <p>TNS Essential Serum<sup class="regmark">&reg;</sup> contains TNS Recovery Complex<sup class="regmark">&reg;</sup> and APS Corrective Complex, for an all-in-one skin rejuvenating treatment. It has been clinically shown to reduce the appearance of fine lines in 30 days.</p>
-
-              <span>Key Ingredients</span>
-              <ul>
-                <li>TNS Recovery Complex<sup class="regmark">&reg;</sup></li>
-                <li>APS Corrective Complex</li>
-              </ul>
-
-              <span>Key Benefits</span>
-              <ul>
-                <li>Reduces the appearance of fine lines and wrinkles</li>
-                <li>Enhances skin texture</li>
-                <li>Enhances skin tone</li>
-              </ul>
-
-              <p>Appropriate for all skin types</p>
-
-              <p>1.  Atkin DH, et al. J Cosmet Laser Ther. 2010;12(1):14-20.
-              </br>
-              2.  2010-Atkin-JCLT-TNS_Combination of physiologically balanced growth factors (v0.1) p. 3.</p>
-            </div>
-
-            <div class="fragment threequarter main" data-autoslide="500"data-fragment-index="2" data-animate="fadeIn"></div>
-
-            <div class="fragment" data-fragment-index="3" data-animate="fadeIn" data-autoslide="1000" style="position:absolute;left:780px;top:145px;" id="bottle1"></div>
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-
-<!--S18-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-                <div class="leftfullsize secondary" data-fragment-index="0" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-                <div class="fragment" data-fragment-index="0" data-autoslide="100">
-                    <div class="resultsh1-18 size main" data-animate="fadeIn"><h1>Clinicial Results: TNS Essential</br>Serum<sup class="regmark">&reg;1</sup></h1>
-                    </div>
-                </div>
-
-                <div class="fragment resultsh4-18 size main" data-fragment-index="0" data-autoslide="100">
-                    <h4 data-animate="fadeIn">
-                    Female, Age 54
-                  </br>Unretouched photographs of subject at baseline and 1 month after twice-daily use of TNS Essential Serum<sup class="regmark">&reg;</sup>. Individual results may vary.
-                </br>1. Atkin DH, Trookman NS, Rizer RL, et al. <i>J Cosmet Laser Ther.</i> 2010;12(1):14-20.<sup class="regmark">&reg;</sup>.</h4>
-                </div>
-
-                <div class="fragment" data-fragment-index="1" data-autoslide="1000">
-                    <img class="S18i1" src="./img/s18-eyeleft.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="before size secondary">
-                        <h2 data-animate="fadeIn">BASELINE</h2>
-                    </div>
-                </div>
-
-                <div class="fragment" data-fragment-index="2" data-autoslide="500">
-                    <img class="S18i2" src="./img/s18-head-right.png" data-fragment-index="1" data-autoslide="450" data-animate="fadeIn">
-                    <div class="after size secondary" data-animate="fadeIn">
-                        <h2>MONTH 1</h2>
-                   </div>
-               </div>
-
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-<!--S19-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"> </div>
-
-                <div class="leftfullsize secondary" data-fragment-index="1" data-autoslide="100">
-                  <img src="./img/00-skin-logo-white-larger.png" class="whitebug" data-animate="fadeIn" data-autoslide="100">
-                </div>
-
-            <div class="fragment" data-fragment-index="2" data-autoslide="100">
-                <div class="resultsh1 size main" data-animate="fadeIn">
-                    <h1>TNS Essential Serum<sup class="regmark">&reg;</sup>: Progressive Improvements</br>in 3 Months<sup class="regmark">1,2</sup></h1>
-                </div>
-            </div>
-
-            <div class="fragment S9h4 size main" data-fragment-index="2" data-autoslide="1000">
-                <h4 data-animate="fadeIn">
-                </br>1. Draelos Z. 3-month study of TNS Essential Serum<sup class="regmark">&reg;</sup>.    </br>  Data on file, SkinMedica<sup class="regmark">&reg;</sup>.
-              </br>2. Atkin DH, et al. <i>J Cosmet Laser Ther.</i> 2010;12(1):14-20.</h4>
-            </div>
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img src="./img/s19-bg-top-a.png" class="S19i1">
-            <img src="./img/s19-bg-bot-b.png" class="S19i2">
-          </div>
-
-          <div class="fragment" data-fragment-index="3" data-autoslide="1000"></div>
-          <div class="fragment" data-fragment-index="4" data-autoslide="1000">
-            <img class="S19i3" data-animate="fadeInUp" src="./img/s19-bars-a.png">
-          </div>
-          <div class="fragment" data-fragment-index="4" data-autoslide="1000">
-            <img class="S19i4" data-animate="fadeInDown" src="./img/s19-bars-b.png">
-          </div>
-
-          <div class="fragment cover S19cover-a" data-fragment-index="1" data-autoslide="100"></div>
-          <div class="fragment cover S19cover-b" data-fragment-index="1" data-autoslide="100"></div>
-
-
-          <div class="fragment" data-fragment-index="1" data-autoslide="100">
-            <img src="./img/s19-bg-bot-a.png" class="S19i5">
-            <img src="./img/s19-bg-top-b.png" class="S19i6">
-          </div>
-
-          <div class="S19cover-1 graph-light" data-fragment-index="1" data-autoslide="100"></div>
-          <div class="S19cover-2 graph-light" data-fragment-index="1" data-autoslide="100"></div>
-          <div class="S19cover-3 graph-light" data-fragment-index="1" data-autoslide="100"></div>
-
-
-          <div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
-          </div>
-
-        </section>
-
-<!--S20-->
-        <section class="addFrag">
-          <div class="fragment" data-autoslide="0"></div>
-
-          <div data-fragment-index="1" data-autoslide="100">
-            <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-          </div>
-
-          <div class="size secondary table" data-fragment-index="0" data-autoslide="100">
-            <h1 data-animate="fadeIn">My Morning SkinMedica<sup class="regmark">&reg;</sup> Regimen</h1>
-          </div>
-
-            <div class="fragment" data-fragment-index="1" data-autoslide="1000" data-animate="fadeIn">
-              <img class="S20i1" src="./img/s20-chart.png">
-            </div>
-
-            <div class="fragment" data-fragment-index="2" data-autoslide="1000" data-animate="fadeIn">
-            </div>
-
-            <div class="fragment" data-fragment-index="3" data-autoslide="1000" data-animate="fadeIn">
-                <img class="S20i2" src="./img/s20-bottle1.png">
-            </div>
-            <div class="fragment" data-fragment-index="4" data-autoslide="1300" data-animate="fadeIn">
-                <img class="S20i3" src="./img/s20-bottle2.png">
-            </div>
-            <div class="fragment" data-fragment-index="5" data-autoslide="1600" data-animate="fadeIn">
-                <img class="S20i4" src="./img/s20-bottle3.png">
-            </div>
-            <div class="fragment" data-fragment-index="6" data-autoslide="1800" data-animate="fadeIn">
-                <img class="S20i5" src="./img/s20-bottle4.png">
-            </div>
-            <div class="fragment" data-fragment-index="7" data-autoslide="2100" data-animate="fadeIn">
-                <img class="S20i6" src="./img/s20-bottle5.png">
-            </div>
-
-
-        <div>
-          <button type="button" class="prev"></button>
-          <button type="button" class="next"></button>
-        </div>
-
-      </section>
-
-<!--S21-->
-      <section class="addFrag">
-        <div class="fragment" data-autoslide="0"></div>
-
-        <div data-fragment-index="1" data-autoslide="100">
-          <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-        </div>
-
-        <div class="table size secondary" data-fragment-index="0" data-autoslide="100">
-          <h1 data-animate="fadeIn">My Evening SkinMedica<sup class="regmark">&reg;</sup> Regimen</h1>
-        </div>
-
-          <div class="fragment" data-fragment-index="1" data-autoslide="1000" data-animate="fadeIn">
-            <img class="S21i1" src="./img/s21-chart.png">
-          </div>
-          <div class="fragment" data-fragment-index="2" data-autoslide="1000" data-animate="fadeIn">
-          </div>
-          <div class="fragment" data-fragment-index="3" data-autoslide="1000" data-animate="fadeIn">
-              <img class="S21i2" src="./img/s21-bottle1.png">
-            </div>
-            <div class="fragment" data-fragment-index="4" data-autoslide="1300" data-animate="fadeIn">
-                <img class="S21i3" src="./img/s21-bottle2.png">
-            </div>
-            <div class="fragment" data-fragment-index="5" data-autoslide="1600" data-animate="fadeIn">
-                <img class="S21i4" src="./img/s21-bottle3.png">
-            </div>
-            <div class="fragment" data-fragment-index="6" data-autoslide="1800" data-animate="fadeIn">
-                <img class="S21i5" src="./img/s21-bottle4.png">
-            </div>
-
-
-      <div>
-        <button type="button" class="prev"></button>
-        <button type="button" class="next"></button>
-      </div>
-
-    </section>
-
-    <!--S22-->
-          <section class="addFrag">
-            <div data-fragment-index="1" data-autoslide="100">
-              <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-            </div>
-
-            <div class= "fragment"></div>
-              <img class="fragment S22i1" data-fragment-index="1" data-autoslide="3000"  data-animate="fadeIn" src="img/s11-image.png">
-
-              <div class="S22text serum-info fragment" data-fragment-index="1" data-autoslide="3000" data-animate="fadeIn">
-                <h1>Consumer Language: </br>TNS Recovery Complex<sup class="regmark">&reg;</sup></h1>
-                <p><i>What will it do for her?</i></br>TNS Recovery Complex<sup class="regmark">&reg;</sup> works to promote skin rejuvenation, improving fine lines and wrinkles, and overall skin texture.
-                </br>
-                </br>
-                <i>What is it?</i>
-                </br>
-                TNS Recovery Complex<sup class="regmark">&reg;</sup> is the most rigorously tested, proven, patient-praised product of its kind. It incorporates more than 380 stabilized growth factors, or naturally occurring proteins, to promote the skin's natural rejuvenation process.
-                </p>
-              </div>
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-          </section>
-
-
-    <!--S23-->
-
-          <section class="addFrag">
-            <div data-fragment-index="1" data-autoslide="100">
-              <img class="greybug" data-autoslide="100" data-animate="fadeIn" src="./img/00-logo-grey-white.png">
-            </div>
-
-            <div class="fragment" data-fragment-index="1" data-autoslide="3000" data-animate="fadeIn">
-              <img class="S23i1" src="img/serum-left.png">
-            </div>
-              <div class="S23text serum-info fragment" data-fragment-index="1" data-autoslide="3000" data-animate="fadeIn">
-                <h1>Consumer Language: </br>TNS Essential Serum<sup class="regmark">&reg;</sup></h1>
-                <p><i>What will it do for her?</i> </br>TNS Essential Serum<sup class="regmark">&reg;</sup> improves the appearance of fine lines, wrinkles, and skin texture.
-                </br>
-                </br>
-                <i>What is it?</i>
-                </br>TNS Essential Serum<sup class="regmark">&reg;</sup> contains 2 powerhouse components: TNS Recovery Complex<sup class="regmark">&reg;</sup> and the APS Corrective Complex, which is a blend of antioxidants, peptides, and specialty ingredients, including alpha-arbutin and hyaluronic </br> filling spheres.</p>
-
-              </div>
-
-              <div class="fragment" data-fragment-index="2" data-animate="fadeIn">
-                <img class="S23i2" src="img/s23-right-bottle.png">
-              </div>
-            <div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-
-          </section>
-
-<!--S24 Q1-->
-      <section>
-
-        <!--Quiz Backgrounds-->
-
-        <img class="Qi" src="./img/s06-image1.png" data-fragment-index="1" data-animate="fadeIn">
-          <div class="Qquizfullright Qcolor" data-fragment-index="1"></div>
-          <div data-fragment-index="0" data-animate="fadeIn">
-            <img src="./img/00-logo-grey-white.png" class="greybug">
-          </div>
-        <!--QuizNumber-->
-          <div data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/s24-quiz-1.png" class="Qnumber">
-          </div>
-          <div class="size secondary Qquizh2" data-fragment-index="1" data-animate="fadeIn">
-            <h2>Question</h2>
-          </div>
-          <div class="Qblackbar" data-fragment-index="1" data-animate="slideInLeft"></div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qtitle">
-            <h2>Quiz: Correct-Rejuvenation: TNS<sup class="regmark">&reg;</sup></h2>
-          </div>
-        <!--Questions-->
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qquestion">
-            <h2>Which property is </br>optimal for topical </br>growth factors?</h2>
-          </div>
-        <!--Answers-->
-            <input type="button" id="Qa1_1" data-quiz="1" class="Qasize black quiz_1" value = "1: Naturally secreted">
-            <input type="button" id="Qa1_2" data-quiz="1" class="Qasize black quiz_1" value = "2: Physiologically balanced">
-            <input type="button" id="Qa1_3" data-quiz="1" class="Qasize black quiz_1" value = "3: Highly concentrated">
-            <input type="button" id="Qa1_4" data-quiz="1" class="Qasize black quiz_1" value = "4: Stabilized">
-            <input type="button" id="Qa1_5" data-quiz="1" class="Qasize black quiz_1 correct" value = "5: All of the above">
-      </section>
-
-<!--S25 Q2-->
-      <section>
-        <!--S25 Quiz Backgrounds-->
-        <img class="Qi" src="./img/s06-image1.png" data-fragment-index="1" data-animate="fadeIn">
-          <div class="Qquizfullright Qcolor" data-fragment-index="1"></div>
-          <div data-fragment-index="0" data-animate="fadeIn">
-            <img src="./img/00-logo-grey-white.png" class="greybug">
-          </div>
-        <!--S25 QuizNumber-->
-          <div data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/s25-quiz-2.png" class="Qnumber">
-          </div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size secondary Qquizh2">
-            <h2>Question</h2>
-          </div>
-          <div class="Qblackbar" data-fragment-index="1" data-animate="fadeIn"></div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qtitle">
-            <h2>Quiz: Correct-Rejuvenation: TNS<sup class="regmark">&reg;</sup></h2>
-          </div>
-        <!--S25 Questions-->
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qquestion">
-            <h2>TNS<sup class="regmark">&reg;</sup> contains</br><u style="font-size:3px;">____________</u> stabilized</br>growth factors.</h2>
-          </div>
-        <!--S25 Answers-->
-            <input type="button" id="Qa2_1" data-quiz="2" class="Qasize black quiz_2" value = "1: 175+">
-            <input type="button" id="Qa2_2" data-quiz="2" class="Qasize black quiz_2" value = "2: 220+">
-            <input type="button" id="Qa2_3" data-quiz="2" class="Qasize black quiz_2" value = "3: 350+">
-            <input type="button" id="Qa2_4" data-quiz="2" class="Qasize black quiz_2 correct" value = "4: 380+">
-
-      </section>
-
-
-<!--S26 Q3-->
-      <section>
-        <!--S26 Quiz Backgrounds-->
-        <img class="Qi" src="./img/s06-image1.png" data-fragment-index="1" data-animate="fadeIn">
-          <div class="Qquizfullright Qcolor" data-fragment-index="1"></div>
-          <div data-fragment-index="0" data-animate="fadeIn">
-            <img src="./img/00-logo-grey-white.png" class="greybug">
-          </div>
-        <!--S26 QuizNumber-->
-          <div data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/s26-quiz-3.png" class="Qnumber">
-          </div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size secondary Qquizh2">
-            <h2>Question</h2>
-          </div>
-          <div class="Qblackbar" data-fragment-index="1" data-animate="fadeIn"></div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qtitle">
-            <h2>Quiz: Correct-Rejuvenation: TNS<sup class="regmark">&reg;</sup></h2>
-          </div>
-        <!--S26 Questions-->
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qquestion">
-            <h2>TNS<sup class="regmark">&reg;</sup> was the first</br>topical solution</br>made almost entirely</br>of stabilized human</br>fibroblast growth</br>factor secretions.</h2>
-          </div>
-        <!--S26 Answers-->
-            <input type="button" id="Qa3_1" data-quiz="3" class="Qasize black quiz_3 correct" value = "1: True">
-            <input type="button" id="Qa3_2" data-quiz="3" class="Qasize black quiz_3" value = "2: False">
-
-      </section>
-
-<!--S27 Q4-->
-      <section>
-        <!--S27 Quiz Backgrounds-->
-        <img class="Qi" src="./img/s06-image1.png" data-fragment-index="1" data-animate="fadeIn">
-          <div class="Qquizfullright Qcolor" data-fragment-index="1"></div>
-          <div data-fragment-index="0" data-animate="fadeIn">
-            <img src="./img/00-logo-grey-white.png" class="greybug">
-          </div>
-        <!--S27 QuizNumber-->
-          <div data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/s27-quiz-4.png" class="Qnumber">
-          </div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size secondary Qquizh2">
-            <h2>Question</h2>
-          </div>
-          <div class="Qblackbar" data-fragment-index="1" data-animate="fadeIn"></div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qtitle">
-            <h2>Quiz: Correct-Rejuvenation: TNS<sup class="regmark">&reg;</sup></h2>
-          </div>
-        <!--S27 Questions-->
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qquestion">
-            <h2>TNS Essential Serum<sup class="regmark">&reg;</sup> works</br> to improve the appearance of:</h2>
-          </div>
-        <!--S27 Answers-->
-            <input type="button" id="Qa4_1" data-quiz="4" class="Qasize black quiz_4" value = "1: Fine lines and wrinkles">
-            <input type="button" id="Qa4_2" data-quiz="4" class="Qasize black quiz_4" value = "2: Coarse wrinkles">
-            <input type="button" id="Qa4_3" data-quiz="4" class="Qasize black quiz_4" value = "3: Skin texture">
-            <input type="button" id="Qa4_4" data-quiz="4" class="Qasize black quiz_4 correct" value = "4: All of the above">
-      </section>
-
-<!--S28 Q5-->
-      <section>
-        <!--S28 Quiz Backgrounds-->
-        <img class="Qi" src="./img/s06-image1.png" data-fragment-index="1" data-animate="fadeIn">
-          <div class="Qquizfullright Qcolor" data-fragment-index="1"></div>
-          <div data-fragment-index="0" data-animate="fadeIn">
-            <img src="./img/00-logo-grey-white.png" class="greybug">
-          </div>
-        <!--S28 QuizNumber-->
-          <div data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/s28-quiz-5.png" class="Qnumber">
-          </div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size secondary Qquizh2">
-            <h2>Question</h2>
-          </div>
-          <div class="Qblackbar" data-fragment-index="1" data-animate="fadeIn"></div>
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qtitle">
-            <h2>Quiz: Correct-Rejuvenation: TNS<sup class="regmark">&reg;</sup></h2>
-          </div>
-        <!--S28 Questions-->
-          <div data-fragment-index="1" data-animate="fadeIn" class="size main Qquestion">
-            <h2>TNS Recovery Complex<sup class="regmark">&reg;</sup> can</br>be used in these</br> skin care regimens:</h2>
-          </div>
-        <!--S28 Answers-->
-            <input type="button" id="Qa5_1" data-quiz="5" class="Qasize black quiz_5" value = "1: Skin Rejuvenation">
-            <input type="button" id="Qa5_2" data-quiz="5" class="Qasize black quiz_5" value = "2: Corrective skin care">
-            <input type="button" id="Qa5_3" data-quiz="5" class="Qasize black quiz_5" value = "3: Acne skin care">
-            <input type="button" id="Qa5_4" data-quiz="5" class="Qasize black quiz_5 correct" value = "4: All of the above">
-
-      </section>
-
-<!--S29  End Of Quiz-->
-      <section>
-          <img class="S2i1" src="./img/s02-background.png" data-fragment-index="0" data-animate="fadeIn">
-          <div class="topleftbug" data-fragment-index="1" data-animate="fadeIn">
-            <img src="./img/00-skin-logo-white-larger.png" class="whitebug">
-          </div>
-          <div data-fragment-index="2" data-animate="fadeIn" class="size main S29h1">
-            <h1>Congratulations on completing the </br> Correct-Rejuvenation TNS<sup class="regmark">&reg;</sup> Training Module</h1>
-            <div data-fragment-index="3" data-animate="fadeIn" class="size main S29h3">
-              <h3 class="S29h3">Please Proceed to the Next SkinMedica<sup class="regmark">&reg;</sup> University Training Module.</h3>
-            </div>
-          </div>
-
-          <div>
-            <button type="button" class="home"></button>
-          </div>
-      </section>
-
-
-    </div>
-  </div>
-
-
-<script src="js/reveal.js"></script>
-<script type="text/javascript" src="js/animate.js"></script>
-<script src="./js/bottles.js"></script>
-<script src="./js/custom.js"></script>
-
-    <script>
-
-          Reveal.initialize({fragments: true, width: 1920, height: 1080, margin: 0, transition: 'fade', controls: false, keyboard: false, autoSlide: 0,});
-
-
-
-
-    </script>
-
-  <!--<script type="text/javascript">
-    alert('Best viewed on Google Chrome.');
-  </script>-->
-
-  </body>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+
+
+	<script src="js/custom.js"></script>
+	<script src="js/script.js"></script>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+
+
+	<link rel="stylesheet" href="css/simple.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- Objections 1 -->
+
+			<section id="obj-ch">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background">
+					<!-- <div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+
+					<div id="obj_1" class="obj_tab objection-1 active_tab">
+						<div class="obj_tab objection-1 active_tab">
+							<div class="objections-text">
+								<img src="img/objection1.png" alt="Answer 1">
+							</div>
+
+							<a href="#ans-1">
+								<div class="answer-bn primary">
+									<h2 class="primary">Reveal Response Points</h2>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div id="obj_2" class="obj_tab">
+						<h1>Two</h1>
+						<p>Lorem ipsum</p>
+					</div>
+
+					<div id="obj_3" class="obj_tab">
+						<h1>Three</h1>
+						<p>Lorem ipsum</p>
+					</div>
+
+					<div id="obj_4" class="obj_tab">
+						<h1>Four</h1>
+						<p>Lorem ipsum</p>
+					</div>
+
+				</div>
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section>
+
+
+			<!-- Objection 1 -->
+
+			<!-- <section id="obj-1" class="obj_tab objection-1 active_tab">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background-objections">
+					<!-- <div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+			<!-- <a href="#ans-1">
+						<div class="answer-bn primary">
+							<h2 class="primary">Reveal Response Points</h2>
+					</a>
+					</div>
+					<div class="obj_tab objection-1 active_tab">
+
+						<div class="objections-text">
+							<img src="img/objection-1-final.png" alt="graphic 1">
+						</div>
+					</div>
+
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section> -->
+
+			<!-- Answer 1 -->
+
+			<!-- <section id="ans-1">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background-objections"> -->
+			<!-- <div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+
+			<!-- <div class="obj_tab objection-1 active_tab">
+
+						<div class="objections-text">
+							<img src="img/objection-1-answer.png" alt="Answer 1">
+						</div>
+					</div>
+
+
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="ob-chall-bn-1" class="open-popup-btn"></button>
+					</div>
+				</div>
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section> -->
+
+			<!-- Objection 2 -->
+
+			<!-- <section id="obj-2" class="obj_tab objection-1 active_tab">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background-objections">
+					<div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+			<!--
+
+
+					<div class="obj_tab objection-2 active_tab">
+
+						<div class="objections-text">
+							<img src="img/objection-2-final.png" alt="objection 2">
+						</div>
+					</div>
+
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="ob-chall-bn-2" class="open-popup-btn"></button>
+					</div>
+				</div>
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section> -->
+
+			<!-- Objection 3 -->
+
+			<!-- <section id="obj-3">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background-objections"> -->
+			<!-- <div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+
+
+
+			<!-- <div class="obj_tab objection-3 active_tab">
+
+						<div class="objections-text">
+							<img src="img/objection-3-final.png" alt="Objection 3">
+						</div>
+					</div>
+
+
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="ob-chall-bn-3" class="open-popup-btn"></button>
+					</div>
+				</div>
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section> -->
+
+			<!-- Objection 4 -->
+
+			<!-- <section id="obj-4">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+
+					<a href="#obj-1" class="objections objection-1 active_nav" data-tab="obj_1">
+						<h2>Objection 1</h2>
+					</a>
+
+					<a href="#obj-2" class="objections objection-2" data-tab="obj_2">
+						<h2>Objection 2</h2>
+					</a>
+
+					<a href="#obj-3" class="objections objection-3" data-tab="obj_3">
+						<h2>Objection 3</h2>
+					</a>
+
+					<a href="#obj-4" class="objections objection-4" data-tab="obj_4">
+						<h2>Objection 4</h2>
+					</a>
+				</div>
+
+				<div class="background-objections"> -->
+			<!-- <div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+						hi
+						<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+							<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+						</div>
+
+					</div> -->
+
+			<!-- <div class="obj_tab objection-4 active_tab"> -->
+			<!-- <h1>One</h1>
+						<p>Lorem ipsum</p> -->
+			<!-- <div class="objections-text">
+							<img src="img/objection-4-final.png" alt="Objection 4">
+						</div>
+					</div>
+
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="ob-chall-bn-4" class="open-popup-btn"></button>
+					</div>
+				</div>
+
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+
+				</div>
+
+			</section> -->
+
+
+
+			<!-- ONC-1 Patient types/Identification -->
+
+			<section id="onc">
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Patient Types/Identification</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#uro">
+							<h1>ONC</h1>
+							<h6>Tap to flip to URO</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-1">
+						<img src="img/onc-spread1-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="o-chall-bn-1" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-o" class="open-popup-btn"></button>
+					</div>
+
+
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+
+			</section>
+
+			<!-- ONC-2 spartan study design -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>SPARTAN Study Design & MFS</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#uro">
+							<h1>ONC</h1>
+							<h6>Tap to flip to URO</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-2">
+						<img src="img/onc-spread2-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="o-chall-bn-2" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-1o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-2o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-3o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-4o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-5ao" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-5bo" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-6o" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+			<!-- ONC-3 secondary Endpoints -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Secondary Endpoints</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#uro">
+							<h1>ONC</h1>
+							<h6>Tap to flip to URO</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-3">
+						<img src="img/onc-spread3-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="o-chall-bn-3" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-1o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-2ao" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-2bo" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+
+
+
+
+			<!--  ONC-4 Safety & Dosing -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Safety & Dosing</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#uro">
+							<h1>ONC</h1>
+							<h6>Tap to flip to URO</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-4">
+						<img src="img/onc-spread4-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="o-chall-bn-4" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-1o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-2o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-3o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-4o" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-5ao" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-5bo" class="open-popup-btn"></button>
+					</div>
+
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+
+			<!-- ONC-5 Summary -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Summary</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#uro">
+							<h1>ONC</h1>
+							<h6>Tap to flip to URO</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-4">
+						<img src="img/onc-spread5-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="o-chall-bn-5" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-1ao" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-1bo" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-2o" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+
+			<!-- URO -->
+
+
+
+			<!-- URO-1 Patient types/Identification -->
+
+			<section id="uro">
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Patient Types/Identification</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#onc">
+							<h1>URO</h1>
+							<h6>Tap to flip to ONC</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-1">
+						<img src="img/uro-spread1-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="u-chall-bn-1" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-1u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-2u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-3u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-4u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-1-5u" class="open-popup-btn"></button>
+					</div>
+
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+
+			</section>
+
+			<!-- URO-2 spartan study design -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>SPARTAN Study Design, MFS & PFS</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#onc">
+							<h1>URO</h1>
+							<h6>Tap to flip to ONC</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-2">
+						<img src="img/uro-spread2-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="u-chall-bn-2" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-1u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-2u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-3u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-4u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-5au" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-5bu" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-2-6o" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+			<!-- URO-3 secondary Endpoints -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Secondary Endpoints</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#onc">
+							<h1>URO</h1>
+							<h6>Tap to flip to ONC</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-3">
+						<img src="img/uro-spread3-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="u-chall-bn-3" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-1u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-2u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-3au" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-3-3bu" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+
+			<!--  URO-4 Safety & Dosing -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Safety & Dosing</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#onc">
+							<h1>URO</h1>
+							<h6>Tap to flip to ONC</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-4">
+						<img src="img/uro-spread4-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="u-chall-bn-4" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-1u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-2u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-3u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-4u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-5au" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-5bu" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-4-6u" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+			<!-- URO-5 Summary -->
+			<section>
+
+				<div class="header">
+					<a href="#admin" class="admin-link">
+						<div class="admin">
+							<img src="img/admin-icon.png">
+						</div>
+					</a>
+					<div class="deck-title">
+						<h2>Summary</h2>
+					</div>
+					<div class="deck-name">
+						<a href="#onc">
+							<h1>URO</h1>
+							<h6>Tap to flip to ONC</h6>
+						</a>
+					</div>
+				</div>
+
+				<div class="background">
+
+					<h2 class="secondary bold top-note">Tap each touchpoint for more information and don't miss the competition questions!</h2>
+					<div class="spread-2">
+						<img src="img/uro-spread5-graphic.png" alt="graphic 1">
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="1000">
+						<button data-animate="fadeIn" id="u-chall-bn-5" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-1u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-2u" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-3au" class="open-popup-btn"></button>
+					</div>
+					<div class="fragment" data-fragment-index="1" data-autoslide="2000">
+						<button data-animate="pulseAlt" id="pop-bn-5-3bu" class="open-popup-btn"></button>
+					</div>
+
+				</div>
+				<div class="fragment" data-autoslide="0"></div>
+
+				<div class="footer">
+					<button type="button" class="prev prev-arrow-position"></button>
+					<h2 class="bold secondary nav-note">Use the arrows to navigate pages</h2>
+					<button type="button" class="next next-arrow-position"></button>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+	<div id="popup-container" class="hidden">
+		<div class="blur"></div>
+		<div class="popup-modal plzwork">
+			<div class="popup-modal-close">
+				<img src="img/exit-icon.png" alt="exit-icon">
+			</div>
+			<div class="modal-pic">
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/reveal.js"></script>
+	<script type="text/javascript" src="js/animate.js"></script>
+
+
+	<script>
+		Reveal.initialize({
+			fragments: true,
+			width: '100%',
+			height: '100%',
+			margin: 0,
+			transition: 'fade',
+			transitionSpeed: 'fast',
+			controls: false,
+			keyboard: false,
+			autoSlide: 0,
+			progress: false,
+		});
+	</script>
+</body>
+
 </html>
